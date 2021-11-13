@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Baguio City Vaccination Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your vaccination classification group?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="a0">Iam not vaccinated yet</option>
+        <option value="a1">A1 Healthcare Workers</option>
+        <option value="a2">A2 Senior Citizens</option>
+        <option value="a3">A3 Person with Commorbilities</option>
+        <option value="a4">A4 Frontline Personell</option>
+        <option value="a5">A5 Indigent Population</option>
+        <option value="a6">A6 Rest Of the Population</option>
+        <option value="a7">prefer not to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend taking Covid19 vaccine to everyone?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Where did you took the vaccine?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="slu">Saint Louis University</option>
+        <option value="ub">University of Baguio</option>
+        <option value="sm">SM Baguio</option>
+        <option value="bcc">Baguio Country Club</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What Covid19 vaccine brand did you took?
+        <span class="clue">(If you took more than one vaccine,check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="astra"
+          type="checkbox"
+          class="input-checkbox"
+        />Astrazenica</label
+      >
+      <label>
+        <input
+           name="prefer"
+          value="pfizer"
+          type="checkbox"
+          class="input-checkbox"
+        />PFizer</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Sinovac"
+          type="checkbox"
+          class="input-checkbox"
+        />Sinovac</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="moderna"
+          type="checkbox"
+          class="input-checkbox"
+        />Moderna</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Jansen"
+          type="checkbox"
+          class="input-checkbox"
+        />Johnson & Johnson’s</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="sputnik"
+          type="checkbox"
+          class="input-checkbox"
+        />Gamaleya Sputnik V</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bharat"
+          type="checkbox"
+          class="input-checkbox"
+        />Bharat BioTech</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="novavax"
+          type="checkbox"
+          class="input-checkbox"
+        />Novavax</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="sinopharm"
+          type="checkbox"
+          class="input-checkbox"
+        />Sinopharm</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="notyet"
+          type="checkbox"
+          class="input-checkbox"
+        />Iam not yet vaccinated</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="prefernot"
+          type="checkbox"
+          class="input-checkbox"
+        />Prefer not to say</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
